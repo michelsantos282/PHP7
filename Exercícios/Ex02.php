@@ -10,7 +10,8 @@
         <?php
 
             function calcImpostodeRenda ($salario) {
-
+            
+                
                 $imposto = 0;
 
                 if($salario <= 1903.98) {
