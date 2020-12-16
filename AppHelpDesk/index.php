@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -39,6 +40,25 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
+                  
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro' ) {  ?>
+
+                    <div class="text-danger">
+                      Usuario ou Senha inválido(s)
+                    </div>
+
+                <? } ?>
+
+                    <? if(isset($_GET['login']) && $_GET['login'] == 'erro2' ) {  ?>
+
+                    <div class="text-danger">
+                      Você Precisa estar logado para acessar a Página solicitada
+                    </div>
+                    
+                <? } ?>
+
+
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
